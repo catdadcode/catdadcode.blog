@@ -15,7 +15,7 @@ const config = {
 			precompress: true,
 		}),
 		paths: {
-			base: process.argv.includes("dev") ? "" : "catdadcode.blog.githu",
+			base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
 		},
 	},
 };
